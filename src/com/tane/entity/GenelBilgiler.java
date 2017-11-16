@@ -130,9 +130,9 @@ public class GenelBilgiler {
     @AttributeOverride(name = "semt" , column = @Column(name = "EV_ADRES_SEMT"))
     })
      
-   @JoinTable(name = "adresTablosu",joinColumns = @JoinColumn(name = "numara"))
-    @GenericGenerator(name = "hilo-gen",strategy = "hilo")
-    @CollectionId(columns = {@Column(name = "adres_id")},generator = "hilo-gen",type=@Type(type="long"))
+   // @JoinTable(name = "adresTablosu",joinColumns = @JoinColumn(name = "numara"))
+   // @GenericGenerator(name = "hilo-gen",strategy = "hilo")
+   // @CollectionId(columns = {@Column(name = "adres_id")},generator = "hilo-gen",type=@Type(type="long"))
     private Adresler evAdres;
     
     @Embedded
